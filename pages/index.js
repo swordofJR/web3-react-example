@@ -4,6 +4,14 @@ import { injected } from "../components/wallet/connectors"
 
 export default function Home() {
   const { active, account, library, connector, activate, deactivate } = useWeb3React()
+  /*
+  active: 现在是否有钱包处于连接状态
+  account: 区块链上地址
+  library: web3或者ethers
+  connector：连接者
+  activate：连接函数
+  deactivate：断开连接函数
+  */
 
   async function connect() {
     try {
